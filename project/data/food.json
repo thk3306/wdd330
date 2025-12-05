@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Meat Pies",
+    "photo_url": "images/meatpie.webp",
+    "link": "https://en.wikipedia.org/wiki/Meat_pie",
+    "description": "Traditional savory pastries filled with minced meat and gravy, a beloved staple of New Zealand cuisine.",
+    "location": "Nationwide, New Zealand"
+  },
+  {
+    "name": "Ice Cream",
+    "photo_url": "images/icecream.webp",
+    "link": "https://en.wikipedia.org/wiki/Ice_cream",
+    "description": "Creamy frozen dessert popular worldwide, with New Zealand known for its high-quality dairy-based varieties.",
+    "location": "Nationwide, New Zealand"
+  },
+  {
+    "name": "Whittaker's Chocolate",
+    "photo_url": "images/chocolate.webp",
+    "link": "https://www.whittakers.co.nz/en_NZ/",
+    "description": "Premium New Zealand chocolate brand famous for its rich, smooth taste and quality ingredients.",
+    "location": "Porirua, Wellington"
+  },
+  {
+    "name": "Milk",
+    "photo_url": "images/milk.webp",
+    "link": "https://en.wikipedia.org/wiki/Milk",
+    "description": "Fresh dairy milk, with New Zealand being renowned for its grass-fed cattle and high-quality dairy products.",
+    "location": "Canterbury & Waikato regions"
+  },
+  {
+    "name": "Ferg Burger",
+    "photo_url": "images/ferg.webp",
+    "link": "https://www.fergburger.com/",
+    "description": "Iconic gourmet burger restaurant from Queenstown, famous for its massive, creative burgers and long queues.",
+    "location": "Queenstown, Otago"
+  },
+  {
+    "name": "Burgerfuel",
+    "photo_url": "images/burgerfuel.webp",
+    "link": "https://www.burgerfuel.com/nz/",
+    "description": "New Zealand burger chain known for fresh ingredients, unique flavor combinations, and sustainable practices.",
+    "location": "Auckland & major cities"
+  },
+  {
+    "name": "Pavlova",
+    "photo_url": "images/pavlova.webp",
+    "link": "https://en.wikipedia.org/wiki/Pavlova_(food)",
+    "description": "Light meringue-based dessert topped with whipped cream and fresh fruit, a classic New Zealand sweet treat.",
+    "location": "Nationwide, New Zealand"
+  },
+  {
+    "name": "Green-lipped Mussels",
+    "photo_url": "images/mussels.webp",
+    "link": "https://en.wikipedia.org/wiki/New_Zealand_green-lipped_mussel",
+    "description": "Native New Zealand shellfish known for their distinctive green shell edge and sweet, tender meat.",
+    "location": "Marlborough Sounds & Coromandel"
+  }
+]

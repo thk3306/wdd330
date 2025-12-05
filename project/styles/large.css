@@ -1,0 +1,24 @@
+@media only screen and (min-width:1025px) {
+    
+    #places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Large screen styles for discover page */
+    .places-container {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .filter-container {
+        margin: 3rem 0;
+    }
+
+    .filter-btn {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+    }
+}

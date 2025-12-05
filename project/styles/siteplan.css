@@ -1,0 +1,53 @@
+:root {
+    --color: rgb(1, 33, 105);
+    --red: rgb(200, 16, 46);
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background-color: var(--color);
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+header {
+    background: var(--color);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: Roboto;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid var(--red);
+}
+
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h2 {
+    font-size: 2rem;
+    font-family: Roboto;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    grid-column: span 2;
+}
+
+footer {
+    background: var(--color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
