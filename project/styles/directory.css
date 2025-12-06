@@ -699,3 +699,145 @@ nav.sociallinks {
         min-height: 320px;
     }
 }
+
+/* Google Custom Search Styles */
+.search-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.search-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--color);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--red);
+    background-color: white;
+}
+
+#searchButton {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: rgb(170, 13, 39);
+}
+
+#searchResults {
+    margin-top: 1.5rem;
+}
+
+.search-info {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.search-result-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--color);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search-result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-result-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.search-result-card h3 a {
+    color: #1a0dab;
+    text-decoration: none;
+}
+
+.search-result-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.result-link {
+    color: #006621;
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
+
+.result-snippet {
+    color: #545454;
+    line-height: 1.5;
+    margin: 0.5rem 0 0 0;
+}
+
+.result-image {
+    float: right;
+    max-width: 120px;
+    max-height: 120px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .search-section {
+        padding: 1.5rem;
+    }
+    
+    .search-container {
+        flex-direction: column;
+    }
+    
+    #searchButton {
+        width: 100%;
+    }
+    
+    .result-image {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-section {
+        padding: 1rem;
+    }
+    
+    .search-result-card {
+        padding: 1rem;
+    }
+}
