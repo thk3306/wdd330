@@ -13,7 +13,6 @@
     transform: scale(1.05);
 }
 
-/* Medium screen styles for discover page */
 .place-card {
     grid-template-areas: 
     "image name"

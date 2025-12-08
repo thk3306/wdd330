@@ -5,7 +5,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    /* Large screen styles for discover page */
     .places-container {
         grid-template-columns: 1fr 1fr;
         max-width: 1200px;

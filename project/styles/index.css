@@ -225,7 +225,6 @@ main section > p {
     margin: 0.5rem 0;
 }
 
-/* Filter buttons for discover page */
 .filter-container {
     text-align: center;
     margin: 2rem 0;
@@ -265,7 +264,6 @@ main section > p {
     opacity: 0.9;
 }
 
-/* Updated place card styles for discover page */
 .place-card {
     margin: 1rem 8px;
     border: 1px solid #ccc;
@@ -494,7 +492,6 @@ button.close-button {
     cursor: pointer;
 }
 
-/* Featured Businesses Section */
 .featured-businesses {
     padding: 3rem 2rem;
     margin: 2rem auto;

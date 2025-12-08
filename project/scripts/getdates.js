@@ -1,6 +1,3 @@
-// Date utilities module
-
-// Function to set the current year
 export function setCurrentYear() {
     const today = new Date();
     const yearElement = document.querySelector("#year");
@@ -10,7 +7,6 @@ export function setCurrentYear() {
     }
 }
 
-// Function to set the last modified date
 export function setLastModified() {
     const lastModified = document.lastModified;
     const lastModifiedElement = document.querySelector("#lastModified");
@@ -20,7 +16,6 @@ export function setLastModified() {
     }
 }
 
-// Function to handle last visit tracking
 export function handleLastVisit() {
     const currentVisit = Date.now();
     const totalVisits = localStorage.getItem('totalVisits') || 0;
@@ -48,12 +43,10 @@ export function handleLastVisit() {
     localStorage.setItem('lastVisitTime', currentVisit);
 }
 
-// Function to initialize all date-related functionality
 export function initializeDates() {
     setCurrentYear();
     setLastModified();
     handleLastVisit();
 }
 
-// Auto-initialize when module is imported (for backward compatibility)
 document.addEventListener('DOMContentLoaded', initializeDates);

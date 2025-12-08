@@ -4,10 +4,8 @@ let startTime = 10;
 let timerId = null;
 
 startButton.addEventListener('click', function() {
-    // prevent starting multiple intervals on repeated clicks
     if (timerId !== null) return;
 
-    // show initial time immediately
     countdown.textContent = startTime;
 
     timerId = setInterval(function() {

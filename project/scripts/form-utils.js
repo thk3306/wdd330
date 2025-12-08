@@ -1,8 +1,3 @@
-// Form utilities module - handles form submission and timestamps
-
-/**
- * Sets timestamp value for form submission
- */
 export function setFormTimestamp() {
     const timestampField = document.querySelector('#timestamp');
     if (timestampField) {
@@ -10,9 +5,6 @@ export function setFormTimestamp() {
     }
 }
 
-/**
- * Displays thank you information from URL parameters
- */
 export function displayThankYouInfo() {
     const queryString = window.location.search;
     const params = new URLSearchParams(queryString);

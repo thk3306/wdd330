@@ -1,10 +1,5 @@
-// Members directory module - handles displaying member directory
 const MEMBERS_URL = 'https://thk3306.github.io/wdd330/project/data/members.json';
 
-/**
- * Fetches member data from JSON file
- * @returns {Promise<Array>} Array of member objects
- */
 async function fetchMembers() {
     try {
         const response = await fetch(MEMBERS_URL);
@@ -18,11 +13,6 @@ async function fetchMembers() {
     }
 }
 
-/**
- * Creates a member card element
- * @param {Object} member - Member object
- * @returns {HTMLElement} Member card element
- */
 function createMemberCard(member) {
     const card = document.createElement('section');
     
@@ -67,10 +57,6 @@ function createMemberCard(member) {
     return card;
 }
 
-/**
- * Renders members to the directory
- * @param {Array} members - Array of member objects
- */
 function renderMembers(members) {
     const cardsContainer = document.querySelector('#cards');
     
@@ -86,9 +72,6 @@ function renderMembers(members) {
     });
 }
 
-/**
- * Initialize directory layout controls
- */
 function initLayoutControls() {
     const gridButton = document.querySelector('#grid');
     const listButton = document.querySelector('#list');
@@ -110,14 +93,10 @@ function initLayoutControls() {
         gridButton.classList.remove('active');
     });
 
-    // Set initial state
     cardsContainer.classList.add('grid');
     gridButton.classList.add('active');
 }
 
-/**
- * Initialize members directory
- */
 export async function initDirectory() {
     const members = await fetchMembers();
     renderMembers(members);

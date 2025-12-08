@@ -1,12 +1,6 @@
-// Directory search module - handles Google Custom Search integration
 const GOOGLE_API_KEY = 'AIzaSyBsPbUDrA3bQ13_fJxtnnE_KjViZQKEPHo';
 const SEARCH_ENGINE_ID = 'b2531f7bdcbf34397';
 
-/**
- * Performs a Google Custom Search for New Zealand businesses
- * @param {string} query - Search query
- * @returns {Promise<Object|null>} Search results or null if error
- */
 async function performGoogleSearch(query) {
     const apiUrl = `https://www.googleapis.com/customsearch/v1?key=${GOOGLE_API_KEY}&cx=${SEARCH_ENGINE_ID}&q=${encodeURIComponent(query)}&cr=countryNZ&gl=nz`;
     
@@ -24,11 +18,6 @@ async function performGoogleSearch(query) {
     }
 }
 
-/**
- * Creates a search result card element
- * @param {Object} item - Search result item
- * @returns {HTMLElement} Result card element
- */
 function createResultCard(item) {
     const resultCard = document.createElement('div');
     resultCard.className = 'search-result-card';
@@ -53,7 +42,6 @@ function createResultCard(item) {
     resultCard.appendChild(link);
     resultCard.appendChild(snippet);
 
-    // Add image if available
     if (item.pagemap && item.pagemap.cse_image && item.pagemap.cse_image[0]) {
         const img = document.createElement('img');
         img.src = item.pagemap.cse_image[0].src;
@@ -66,10 +54,6 @@ function createResultCard(item) {
     return resultCard;
 }
 
-/**
- * Displays search results on the page
- * @param {Object} data - Search API response data
- */
 function displaySearchResults(data) {
     const searchResults = document.querySelector('#searchResults');
     searchResults.innerHTML = '';
@@ -79,7 +63,6 @@ function displaySearchResults(data) {
         return;
     }
 
-    // Display search metadata
     const searchInfo = document.createElement('div');
     searchInfo.className = 'search-info';
     searchInfo.innerHTML = `
@@ -88,23 +71,18 @@ function displaySearchResults(data) {
     `;
     searchResults.appendChild(searchInfo);
 
-    // Display each search result
     data.items.forEach((item) => {
         const card = createResultCard(item);
         searchResults.appendChild(card);
     });
 }
 
-/**
- * Initialize search functionality
- */
 export function initSearch() {
     const searchButton = document.querySelector('#searchButton');
     const searchInput = document.querySelector('#searchInput');
 
     if (!searchButton || !searchInput) return;
 
-    // Search button click handler
     searchButton.addEventListener('click', async () => {
         const query = searchInput.value.trim();
         if (query) {
@@ -115,7 +93,6 @@ export function initSearch() {
         }
     });
 
-    // Enter key handler
     searchInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             searchButton.click();
