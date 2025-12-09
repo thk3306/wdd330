@@ -475,6 +475,39 @@ button.close-button {
     margin-right: 6px;
  }
 
+/* Form Validation Styles */
+.wf1 input[type="text"]:valid,
+.wf1 input[type="email"]:valid,
+.wf1 input[type="tel"]:valid,
+.wf1 textarea:valid {
+    border: 2px solid #28a745;
+    background-color: #f0fff4;
+}
+
+.wf1 input[type="text"]:invalid:not(:placeholder-shown),
+.wf1 input[type="email"]:invalid:not(:placeholder-shown),
+.wf1 input[type="tel"]:invalid:not(:placeholder-shown),
+.wf1 textarea:invalid:not(:placeholder-shown) {
+    border: 2px solid #dc3545;
+    background-color: #fff5f5;
+}
+
+.wf1 input[type="text"]:focus:valid,
+.wf1 input[type="email"]:focus:valid,
+.wf1 input[type="tel"]:focus:valid,
+.wf1 textarea:focus:valid {
+    outline: 2px solid #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+.wf1 input[type="text"]:focus:invalid,
+.wf1 input[type="email"]:focus:invalid,
+.wf1 input[type="tel"]:focus:invalid,
+.wf1 textarea:focus:invalid {
+    outline: 2px solid #dc3545;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
 .wf1 input[type="submit"]{
     background-color: var(--red);
     color: #fff;
