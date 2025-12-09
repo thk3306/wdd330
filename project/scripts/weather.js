@@ -1,5 +1,5 @@
 const WEATHER_API_KEY = "1f6ab7334bdc46a6ade225640250812";
-const WEATHER_API_URL = `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=-36.85646280918705,174.7760109734543&aqi=no`;
+const WEATHER_API_URL = `https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=-36.85646280918705,174.7760109734543&aqi=no`;
 
 const weatherElements = {
     temperature: document.querySelector("#temperature"),
